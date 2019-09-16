@@ -4,9 +4,9 @@ Monster Search is a React app that generates a card of monsters using an API cal
 
 ## Product Demo
 
-!["Homepage"](https://github.com/mrchenliang/monster-search/blob/master/docs/homepage.gif)
+!["Homepage"](https://github.com/mrchenliang/monster-search/blob/master/docs/homepage.png)
 
-!["Search Effect"](https://github.com/mrchenliang/monster-search/blob/master/docs/search.gif)
+!["Search Effect"](https://github.com/mrchenliang/monster-search/blob/master/docs/search.png)
 
 ## Setup
 
