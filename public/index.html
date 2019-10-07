@@ -1,6 +1,27 @@
 <!doctype html>
 <html lang="en">
   <head>
+      <script>
+          function preventPullToRefresh(element) {
+            var prevent = false;
+        
+            document.querySelector(element).addEventListener('touchstart', function(e){
+              if (e.touches.length !== 1) { return; }
+        
+              var scrollY = window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop;
+              prevent = (scrollY === 0);
+            });
+        
+            document.querySelector(element).addEventListener('touchmove', function(e){
+              if (prevent) {
+                prevent = false;
+                e.preventDefault();
+              }
+            });
+          }
+        
+          preventPullToRefresh('#app') // pass #id or html tag into the method
+        </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
