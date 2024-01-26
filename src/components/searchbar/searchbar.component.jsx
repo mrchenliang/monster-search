@@ -2,7 +2,7 @@ import React from "react";
 
 import "./searchbar.styles.css";
 
-export const SearchBar = ({ placeholder, handleInput }) => (
+const SearchBar = ({ placeholder, handleInput }) => (
   <input
     className="search"
     type="search"
@@ -10,3 +10,5 @@ export const SearchBar = ({ placeholder, handleInput }) => (
     onChange={handleInput}
   />
 );
+
+export default SearchBar;
